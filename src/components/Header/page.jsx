@@ -84,7 +84,7 @@ export default function page() {
         <div className="lg:hidden w-full bg-white text-black shadow-md border-t border-gray-300 absolute top-full left-0 right-0 z-50">
           <div className="flex justify-center items-center p-4">
             <img
-              src="https://assets.khanoumi.com/4.82.0.0/_toad/images/brand/logo.svg?v=1.1"
+              src="https://assets.khanoumi.com/4.91.0.0/_toad/images/brand/logo.svg?v=1.1"
               alt="logo"
               className="object-cover w-32"
             />
