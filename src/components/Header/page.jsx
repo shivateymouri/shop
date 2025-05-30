@@ -5,6 +5,7 @@ import { IoEnterOutline, IoMenuSharp } from "react-icons/io5";
 import { IoIosSearch } from "react-icons/io";
 import { FiChevronDown } from "react-icons/fi";
 import useCart from "@/zustand/useCart";
+import Link from "next/link";
 const categories = [
   { name: "پیشنهاد ویژه", sub: ["محصولات ویژه", "تخفیف‌ها"] },
   { name: "برندها", sub: ["برند A", "برند B", "برند C"] },
@@ -69,12 +70,12 @@ export default function page() {
             <IoEnterOutline size={20} />
             ورود
           </span>
-          <span className="cursor-pointer">
+          <Link href="/Basket" className="cursor-pointer">
             {products.reduce((counts, item) => {
               return counts + item.count;
             }, 0)}
             <SlBasket size={20} />
-          </span>
+          </Link>
         </div>
       </header>
 

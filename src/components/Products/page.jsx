@@ -1,11 +1,11 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-
+import useCart from "@/zustand/useCart";
 export default function Page() {
-  const [products, setProducts] = useState([]);
+  const [product, setProducts] = useState([]);
   const [cart, setCart] = useState({});
-
+  const { addProduct, products,increaseCount,decreaseCount } = useCart()
 
   useEffect(() => {
     fetch("https://67a477bf31d0d3a6b7867504.mockapi.io/pro/channel")
@@ -47,7 +47,7 @@ export default function Page() {
 
 
       <div className="w-full flex flex-wrap justify-center gap-6">
-        {products.slice(0, 4).map((product) => (
+        {product.slice(0, 4).map((product) => (
           <div
             key={product.id}
             className="md:w-[22%] w-full min-w-[200px] flex flex-col justify-center items-center gap-10 rounded-lg shadow-lg p-3 bg-white"
@@ -66,20 +66,20 @@ export default function Page() {
                 {product.price}
               </p>
 
-              {cart[product.id] ? (
+             {products.map(item=>item.id).includes(product.id) ? (
                 <div className="mt-3 flex items-center justify-between bg-gray-100 rounded-md p-2">
                   <button
                     className="text-lg text-red-600 px-2"
-                    onClick={() => decreaseQuantity(product.id)}
+                     onClick={() => decreaseCount(product.id)}
                   >
                     -
                   </button>
                   <span className="text-sm font-bold text-black">
-                    {cart[product.id]}
+                   {products.find(item=>item.id==product.id).count}
                   </span>
                   <button
                     className="text-lg text-green-600 px-2"
-                    onClick={() => increaseQuantity(product.id)}
+                      onClick={() => increaseCount(product.id)}
                   >
                     +
                   </button>
@@ -87,7 +87,7 @@ export default function Page() {
               ) : (
                 <button
                   className="w-full bg-red-500 text-white py-2 rounded-md hover:bg-red-600 text-sm"
-                  onClick={() => increaseQuantity(product.id)}
+                   onClick={()=> addProduct({...product,count:1})}
                 >
                   افزودن به سبد خرید
                 </button>
