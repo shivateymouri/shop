@@ -13,7 +13,7 @@ export default function page() {
     >
       <Header />
       <div className="w-full flex justify-center flex-col md:flex-row items-center p-3 h-screen">
-        <div className="md:w-5/6 bg-green-400 w-full flex justify-center items-center">
+        <div className="md:w-5/6 w-full flex gap-5 justify-center items-center">
          {products.length===0 && <p>محصولی موجود نیست.</p>}
           {products.map((product) => {
             return(
