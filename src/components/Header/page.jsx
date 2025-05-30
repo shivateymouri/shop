@@ -50,7 +50,7 @@ export default function page() {
             <IoMenuSharp size={24} />
           </span>
           <img
-            src="https://assets.khanoumi.com/4.82.0.0/_toad/images/brand/logo.svg?v=1.1"
+            src="https://assets.khanoumi.com/4.91.0.0/_toad/images/brand/logo.svg?v=1.1"
             alt="logo"
             className="object-cover md:flex hidden"
           />
