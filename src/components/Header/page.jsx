@@ -6,6 +6,7 @@ import { IoIosSearch } from "react-icons/io";
 import { FiChevronDown } from "react-icons/fi";
 import useCart from "@/zustand/useCart";
 import Link from "next/link";
+
 const categories = [
   { name: "پیشنهاد ویژه", sub: ["محصولات ویژه", "تخفیف‌ها"] },
   { name: "برندها", sub: ["برند A", "برند B", "برند C"] },
