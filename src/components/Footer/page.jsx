@@ -7,7 +7,7 @@ export default function page() {
   return (
     <footer
       dir="rtl"
-      className="w-full p-3 gap-3 md:gap-0 bg-black flex flex-col md:flex-row justify-between items-center border-2"
+      className="w-full p-3 gap-3 md:gap-0 bg-black flex flex-col md:flex-row justify-between items-center"
     >
       <div className="w-full md:w-1/3 flex flex-col p-3 justify-center items-center gap-3">
         <Image

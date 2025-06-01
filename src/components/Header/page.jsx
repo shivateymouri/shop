@@ -6,7 +6,7 @@ import { IoIosSearch } from "react-icons/io";
 import { FiChevronDown } from "react-icons/fi";
 import useCart from "@/zustand/useCart";
 import Link from "next/link";
-
+import "../../assets/css/master.css"
 const categories = [
   { name: "پیشنهاد ویژه", sub: ["محصولات ویژه", "تخفیف‌ها"] },
   { name: "برندها", sub: ["برند A", "برند B", "برند C"] },
@@ -45,7 +45,7 @@ export default function page() {
       <header className="w-full p-6 flex justify-between items-center bg-white text-black shadow-md">
         <div className="flex gap-3 items-center">
           <span
-            className="lg:hidden flex cursor-pointer"
+            className="xl:hidden flex cursor-pointer"
             onClick={() => setMobileMenu(!mobileMenu)}
           >
             <IoMenuSharp size={24} />
@@ -81,7 +81,7 @@ export default function page() {
       </header>
 
       {mobileMenu && (
-        <div className="lg:hidden w-full bg-white text-black shadow-md border-t border-gray-300 absolute top-full left-0 right-0 z-50">
+        <div className="xl:hidden w-full bg-white text-black shadow-md border-t border-gray-300 absolute top-full left-0 right-0 z-50">
           <div className="flex justify-center items-center p-4">
             <img
               src="https://assets.khanoumi.com/4.91.0.0/_toad/images/brand/logo.svg?v=1.1"
@@ -119,7 +119,7 @@ export default function page() {
                           subIndex !== item.sub.length - 1
                             ? "border-b border-gray-200"
                             : ""
-                        } hover:bg-gray-100 cursor-pointer`}
+                        } hover:bg-red-100 cursor-pointer`}
                       >
                         {subItem}
                       </div>
@@ -132,7 +132,7 @@ export default function page() {
         </div>
       )}
 
-      <nav className="hidden lg:flex flex-col w-full bg-white text-black relative z-50 border-b border-gray-300">
+      <nav className="hidden xl:flex flex-col w-full bg-white text-black relative z-50 border-b border-gray-300">
         <ul className="flex gap-4 p-4 items-center justify-start">
           {categories.map((item, index) => (
             <li
@@ -154,7 +154,7 @@ export default function page() {
                     {item.sub.map((subItem, subIndex) => (
                       <div
                         key={subIndex}
-                        className={`px-4 py-2 ${
+                        className={`py-2 text-center ${
                           subIndex !== item.sub.length - 1
                             ? "border-b border-gray-200"
                             : ""

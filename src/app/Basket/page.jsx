@@ -47,7 +47,7 @@ export default function page() {
             <span>جمع سبد خرید</span>
             <span>{products.reduce((total,current)=>{
               return total + (current.price*current.count)
-            },0).toLocaleString()}</span>
+            },0).toLocaleString()+ `تومان`}</span>
           </div>
           <button className="flex w-full justify-center items-center cursor-pointer p-3 bg-pink-500 text-white font-bold">
             ثبت سفارش

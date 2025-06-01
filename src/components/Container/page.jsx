@@ -19,30 +19,30 @@ export default function page() {
       dir="rtl"
       className="w-full bg-white flex justify-center items-center flex-col p-3"
     >
-      <div className="w-full md:w-2/3 flex justify-between items-center gap-2 flex-wrap p-3 *:cursor-pointer *:w-1/12">
+      <div className="w-full md:w-2/3 hidden md:flex justify-between items-center gap-2 flex-wrap p-3 *:cursor-pointer *:w-1/12 *:text-center">
         <div className="flex justify-center items-center gap-3 flex-col">
           <Image src={c1} alt="c1" />
-          <figcaption className="text-black font-bold">تخصصی آقایان</figcaption>
+          <figcaption className="text-black">تخصصی آقایان</figcaption>
         </div>
         <div className="flex justify-center items-center gap-3 flex-col">
           <Image src={c2} alt="c2" />
-          <figcaption className="text-black font-bold">مراقبت مو</figcaption>
+          <figcaption className="text-black">مراقبت مو</figcaption>
         </div>
         <div className="flex justify-center items-center gap-3 flex-col">
           <Image src={c3} alt="c3" />
-          <figcaption className="text-black font-bold">آرایش لب</figcaption>
+          <figcaption className="text-black">آرایش لب</figcaption>
         </div>
         <div className="flex justify-center items-center gap-3 flex-col">
           <Image src={c4} alt="c4" />
-          <figcaption className="text-black font-bold">آرایش چشم</figcaption>
+          <figcaption className="text-black">آرایش چشم</figcaption>
         </div>
         <div className="flex justify-center items-center gap-3 flex-col">
           <Image src={c5} alt="c5" />
-          <figcaption className="text-black font-bold">ضد آفتاب</figcaption>
+          <figcaption className="text-black">ضد آفتاب</figcaption>
         </div>
         <div className="flex justify-center items-center gap-3 flex-col">
           <Image src={c6} alt="c6" />
-          <figcaption className="text-black font-bold">مراقبت پوستی</figcaption>
+          <figcaption className="text-black">مراقبت پوستی</figcaption>
         </div>
       </div>
       <div className="w-full md:w-2/3 flex flex-col justify-between items-center gap-2 flex-wrap p-3 *:cursor-pointer *:w-full">
