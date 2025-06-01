@@ -133,11 +133,11 @@ export default function page() {
       )}
 
       <nav className="hidden xl:flex flex-col w-full bg-white text-black relative z-50 border-b border-gray-300">
-        <ul className="flex gap-4 p-4 items-center justify-start">
+        <ul className="flex gap-2 p-4 items-center justify-start">
           {categories.map((item, index) => (
             <li
               key={index}
-              className="relative text-[18px] py-2 px-4 cursor-pointer hover:bg-gray-100 rounded-md hover:text-pink-500"
+              className="relative text-[18px] flex justify-center items-center gap-2 cursor-pointer hover:bg-gray-100 rounded-md hover:text-pink-500"
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}
             >
