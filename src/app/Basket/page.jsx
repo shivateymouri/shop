@@ -7,12 +7,14 @@ export default function Page() {
   const { products, increaseCount, decreaseCount } = useCart();
 
   return (
-<div>
+    <div>
       <Header />
 
-      <div dir="rtl" className="w-full flex flex-col items-center p-3 bg-white min-h-screen">
+      <div
+        dir="rtl"
+        className="w-full flex flex-col items-center p-3 bg-white min-h-screen"
+      >
         <div className="w-full flex flex-col lg:flex-row items-start gap-5">
-          {/* لیست محصولات */}
           <div className="w-full lg:w-2/3 flex flex-wrap gap-5 justify-center">
             {products.length === 0 ? (
               <p className="text-center text-gray-500">محصولی موجود نیست.</p>
@@ -31,7 +33,9 @@ export default function Page() {
                     <h3 className="text-sm font-semibold line-clamp-2 text-gray-600">
                       {product.name}
                     </h3>
-                    <p className="text-gray-500 text-xs">برند: {product.brand}</p>
+                    <p className="text-gray-500 text-xs">
+                      برند: {product.brand}
+                    </p>
                     <p className="text-red-600 font-bold text-sm mt-2">
                       {product.price.toLocaleString()} تومان
                     </p>
@@ -61,13 +65,15 @@ export default function Page() {
             )}
           </div>
 
-          {/* سایدبار سبد خرید */}
           <div className="w-full lg:w-1/3 flex flex-col justify-between items-center gap-3 text-black border border-gray-300 rounded-md p-3">
             <div className="flex w-full justify-between items-center">
               <span>جمع سبد خرید</span>
               <span>
                 {products
-                  .reduce((total, current) => total + current.price * current.count, 0)
+                  .reduce(
+                    (total, current) => total + current.price * current.count,
+                    0
+                  )
                   .toLocaleString()}{" "}
                 تومان
               </span>
