@@ -133,7 +133,7 @@ export default function page() {
       )}
 
       <nav className="hidden xl:flex flex-col w-full bg-white text-black relative z-50 border-b border-gray-300">
-        <ul className="flex gap-2 p-4 items-center justify-start">
+        <ul className="flex gap-5 p-4 items-center justify-start">
           {categories.map((item, index) => (
             <li
               key={index}
