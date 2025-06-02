@@ -178,7 +178,7 @@ export default function Header() {
           {categories.map((item, index) => (
             <li
               key={index}
-              className="relative text-[18px] flex justify-center items-center gap-2 cursor-pointer hover:bg-gray-100 rounded-md hover:text-pink-500 select-none"
+              className="relative text-[16px] flex justify-center items-center gap-2 cursor-pointer hover:bg-gray-100 rounded-md hover:text-pink-500 select-none"
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}
               tabIndex={0}
