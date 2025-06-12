@@ -28,7 +28,7 @@ export default function page() {
         </div>
       </div>
       <div className="w-full md:w-1/3 p-3 flex flex-col justify-center items-center gap-3">
-      <h2 className="font-bold text-[18px]">شرکت خانومی</h2>
+      <h2 className="font-bold text-[18px] text-white">شرکت خانومی</h2>
       <h6 className="hover:text-pink-500 cursor-pointer text-gray-500">تماس با ما</h6>
       <h6 className="hover:text-pink-500 cursor-pointer text-gray-500">درباره ما</h6>
       <h6 className="hover:text-pink-500 cursor-pointer text-gray-500">فرصت های شغلی</h6>
@@ -38,7 +38,7 @@ export default function page() {
       <h6 className="hover:text-pink-500 cursor-pointer text-gray-500">خانومی TV</h6>
       </div>
       <div className="w-full md:w-1/3 p-3 flex flex-col justify-center items-center gap-3">
-      <h2 className="font-bold text-[18px]">خدمات مشتریان</h2>
+      <h2 className="font-bold text-[18px] text-white">خدمات مشتریان</h2>
       <h6 className="hover:text-pink-500 cursor-pointer text-gray-500">پرسش های متداول</h6>
       <h6 className="hover:text-pink-500 cursor-pointer text-gray-500">راهنمای خرید و پرداخت</h6>
       <h6 className="hover:text-pink-500 cursor-pointer text-gray-500">رویه های ارسال</h6>
