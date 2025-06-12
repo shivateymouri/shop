@@ -15,10 +15,10 @@ export default function page() {
           className="rounded-full w-[180px] h-[180px] object-cover"
           alt="developer"
         />
-        <h2 className="text-white text-md font-mono animate-bounce mt-4">
+        <h2 className="text-gray-500 text-md font-mono animate-bounce mt-4">
           Developed by Shiva Teymouri
         </h2>
-        <div className="w-full flex justify-center items-center gap-3">
+        <div className="w-full flex justify-center items-center gap-3 text-gray-500">
           <a href="https://www.instagram.com/shivateymouri.dev?igsh=MXh3NXBhMjhsZ2tiYg==">
             <IoLogoInstagram size={24}/>
           </a>
